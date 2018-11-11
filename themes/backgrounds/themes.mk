@@ -10,3 +10,11 @@ PRODUCT_PACKAGES += \
     ChocoXSystemUIOverlay \
     DarkGreySystemOverlay \
     DarkGreySystemUIOverlay
+
+# QS header styles
+PRODUCT_PACKAGES += \
+    QSHeaderBlack \
+    QSHeaderGrey \
+    QSHeaderLightGrey \
+    QSHeaderAccent \
+    QSHeaderTransparent
