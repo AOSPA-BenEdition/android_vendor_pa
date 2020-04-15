@@ -1,3 +1,10 @@
+# QS header styles
+PRODUCT_PACKAGES += \
+    QSHeaderGrey \
+    QSHeaderLightGrey \
+    QSHeaderAccent \
+    QSHeaderTransparent
+
 # Themes
 PRODUCT_PACKAGES += \
     PitchBlackSystemOverlay \
