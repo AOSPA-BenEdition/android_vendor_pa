@@ -21,6 +21,7 @@ PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/chiron/pa_chiron.mk \
     $(LOCAL_DIR)/davinci/pa_davinci.mk \
     $(LOCAL_DIR)/dipper/pa_dipper.mk \
+    $(LOCAL_DIR)/ginkgo/pa_ginkgo.mk \
     $(LOCAL_DIR)/land/pa_land.mk \
     $(LOCAL_DIR)/mata/pa_mata.mk \
     $(LOCAL_DIR)/oneplus3/pa_oneplus3.mk \
@@ -34,6 +35,8 @@ PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/rolex/pa_rolex.mk \
     $(LOCAL_DIR)/rosy/pa_rosy.mk \
     $(LOCAL_DIR)/sagit/pa_sagit.mk \
+    $(LOCAL_DIR)/sakura/pa_sakura.mk \
+    $(LOCAL_DIR)/whyred/pa_whyred.mk \
     $(LOCAL_DIR)/X00TD/pa_X00TD.mk \
     $(LOCAL_DIR)/X01BD/pa_X01BD.mk
 
@@ -58,6 +61,7 @@ COMMON_LUNCH_CHOICES += \
     pa_davinci-userdebug \
     pa_dipper-userdebug \
     pa_dora-userdebug \
+    pa_ginkgo-userdebug \
     pa_kagura-userdebug \
     pa_keyaki-userdebug \
     pa_kugo-userdebug \
@@ -73,6 +77,8 @@ COMMON_LUNCH_CHOICES += \
     pa_rolex-userdebug \
     pa_rosy-userdebug \
     pa_sagit-userdebug \
+    pa_sakura-userdebug \
     pa_suzu-userdebug \
+    pa_whyred-userdebug \
     pa_X00TD-userdebug \
     pa_X01BD-userdebug

@@ -14,6 +14,8 @@
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
+BUILD_FINGERPRINT ?= google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     keyguard.no_require_sim=true \
     ro.com.android.dateformat=MM-dd-yyyy \
@@ -33,8 +35,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
+
+ifneq ($(TARGET_USES_HARDWARE_KEYS),true)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+endif
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
